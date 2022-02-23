@@ -3,10 +3,6 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 // 本插件会将 CSS 提取到单独的文件中
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-// 这个插件使用 cssnano 优化和压缩 CSS。
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
-// 该插件使用 terser 来压缩 JavaScript。webpack v5 开箱即带
-const TerserPlugin = require('terser-webpack-plugin')
 
 const toml = require('toml')
 const yaml = require('yaml')

@@ -1,0 +1,8 @@
+body {
+  background-color: aqua;
+  display: flex;
+}
+
+.box {
+  background-color: red;
+}

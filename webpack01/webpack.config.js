@@ -181,7 +181,7 @@ module.exports = (env) => {
       /**
        * SplitChunksPlugin 插件可以将公共的依赖模块提取到已有的入口 chunk 中，
        * 或者提取到一个新生成的 chunk。让我们使用这个插件，将之前的示例中重复的 lodash 模块去除
-       * https://webpack.docschina.org/guides/code-splitting/#prevent-duplication
+       * https://webpack.docschina.org/guides/code-splitting/#splitchunksplugin
        */
       // splitChunks: {
       //   chunks: 'all',
@@ -195,6 +195,7 @@ module.exports = (env) => {
        * 是比较推荐的做法，这是因为，它们很少像本地的源代码那样频繁修改。
        * 因此通过实现以上步骤，利用 client 的长效缓存机制，命中缓存来消除请求，
        * 并减少向 server 获取资源，同时还能保证 client 代码和 server 代码版本一致。
+       * https://webpack.docschina.org/guides/caching/#output-filenames
        */
       splitChunks: {
         cacheGroups: {
